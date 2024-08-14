@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { BsList } from "react-icons/bs";
+import { BsList, BsX } from "react-icons/bs";
 
 const Navbar = () => {
   return (
@@ -57,6 +57,37 @@ const Navbar = () => {
               {/* mobile device */}
               <div className="sm:hidden cursor-pointer pl-24">
                 <BsList className="h-8 w-8 text-primary" />
+              </div>
+            </div>
+            <div className="fixed top-0 left-0 w-[75%] h-screen sm:hidden bg-primary p-10 ease-in-out duration-500">
+              <div className="flex w-full items-center justify-end">
+                <div className="cursor-pointer">
+                  <BsX className="h-8 w-8 text-primary" />
+                </div>
+              </div>
+
+              {/* mobile links */}
+              <div className="flex flex-col py-4">
+                <ul className="text-white roboto text-md">
+                  <li className="py-4 hover:underline hover:decoration-primary">
+                    <Link href="/">Home</Link>
+                  </li>
+                  <li className="py-4 hover:underline hover:decoration-primary">
+                    <Link href="/">About</Link>
+                  </li>
+                  <li className="py-4 hover:underline hover:decoration-primary">
+                    <Link href="/">Features</Link>
+                  </li>
+                  <li className="py-4 hover:underline hover:decoration-primary">
+                    <Link href="/">Our works</Link>
+                  </li>
+                </ul>
+
+                <Link href="/">
+                  <button className="w-[101px] bg-white rounded-md h-[38px] text-primary roboto border-primary ease-in-out transition-all duration-300 md:mt-0 mt-4 hover:bg-gray-600">
+                    Sign up
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
