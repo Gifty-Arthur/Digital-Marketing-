@@ -1,14 +1,20 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { BsList, BsX } from "react-icons/bs";
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+
   return (
     <div>
       <nav className="">
         {/* desktop */}
-        <div className="bg-black w-full shadow-2xl h-22 ">
+        <div className="bg-black w-full shadow-2xl h-22 border-b ">
           <div className="container ">
             <div className=" flex items-center justify-between">
               <Link href="/">
@@ -25,9 +31,10 @@ const Navbar = () => {
                   </h1>
                 </div>
               </Link>
+              {/* desktop */}
               <div className="text-white hidden sm:flex ">
                 <ul className="flex flex-row gap-12 text-md roboto ">
-                  <li className="hover:text-primary border-b hover:border-primary">
+                  <li className="hover:underline hover:decoration-primary hover:text-primary">
                     <Link href="/">Home</Link>
                   </li>
                   <li className="hover:text-primary">
@@ -54,31 +61,59 @@ const Navbar = () => {
                   </button>
                 </Link>
               </div>
+
               {/* mobile device */}
-              <div className="sm:hidden cursor-pointer pl-24">
-                <BsList className="h-8 w-8 text-primary" />
+              <div
+                className="sm:hidden cursor-pointer pl-24"
+                onClick={toggleMenu}
+              >
+                {menuOpen ? (
+                  <BsX className="h-8 w-8 text-primary" />
+                ) : (
+                  <BsList className="h-8 w-8 text-primary" />
+                )}
               </div>
             </div>
-            <div className="fixed top-0 left-0 w-[75%] h-screen sm:hidden bg-primary p-10 ease-in-out duration-500">
+
+            {/* mobile menu */}
+            <div
+              className={
+                menuOpen
+                  ? "fixed top-0 left-0 w-[55%] h-[65%] mt-20 sm:hidden bg-primary p-10 ease-in-out duration-500"
+                  : "fixed left-[-100%] top-0 p-10 ease-in-out duration-500"
+              }
+            >
               <div className="flex w-full items-center justify-end">
-                <div className="cursor-pointer">
+                <div className="cursor-pointer" onClick={toggleMenu}>
                   <BsX className="h-8 w-8 text-primary" />
                 </div>
               </div>
 
               {/* mobile links */}
-              <div className="flex flex-col py-4">
+              <div className="flex flex-col py-4 -mt-10">
                 <ul className="text-white roboto text-md">
-                  <li className="py-4 hover:underline hover:decoration-primary">
+                  <li
+                    onClick={toggleMenu}
+                    className="py-4 hover:underline hover:decoration-white"
+                  >
                     <Link href="/">Home</Link>
                   </li>
-                  <li className="py-4 hover:underline hover:decoration-primary">
+                  <li
+                    onClick={toggleMenu}
+                    className="py-4 hover:underline hover:decoration-white"
+                  >
                     <Link href="/">About</Link>
                   </li>
-                  <li className="py-4 hover:underline hover:decoration-primary">
+                  <li
+                    onClick={toggleMenu}
+                    className="py-4 hover:underline hover:decoration-white"
+                  >
                     <Link href="/">Features</Link>
                   </li>
-                  <li className="py-4 hover:underline hover:decoration-primary">
+                  <li
+                    onClick={toggleMenu}
+                    className="py-4 hover:underline hover:decoration-white"
+                  >
                     <Link href="/">Our works</Link>
                   </li>
                 </ul>
