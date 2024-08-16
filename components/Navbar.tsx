@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
     <div>
       <nav className="">
         {/* desktop */}
-        <div className="bg-black w-full shadow-2xl h-22 border-b ">
+        <div className="bg-[#2D2D2D] w-full shadow-2xl h-22 border-b ">
           <div className="container ">
             <div className=" flex items-center justify-between">
               <Link href="/">
