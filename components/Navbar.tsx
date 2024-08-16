@@ -64,7 +64,7 @@ const Navbar: React.FC = () => {
 
               {/* mobile device */}
               <div
-                className="sm:hidden cursor-pointer pl-24"
+                className="sm:hidden cursor-pointer pl-24 z-20"
                 onClick={toggleMenu}
               >
                 {menuOpen ? (
@@ -80,7 +80,7 @@ const Navbar: React.FC = () => {
               className={
                 menuOpen
                   ? "fixed top-0 left-0 w-[55%] h-[65%] mt-20 sm:hidden bg-primary p-10 ease-in-out duration-500"
-                  : "fixed left-[-100%] top-0 p-10 ease-in-out duration-500"
+                  : "fixed left-[-100%] top-0 p-10 ease-in-out duration-500 z-20"
               }
             >
               <div className="flex w-full items-center justify-end">
