@@ -539,9 +539,7 @@ const Hero = () => {
               </button>
             </Link>
           </div>
-          <p className="text-white mt-8 text-md">
-            David Smith - CEO of a Tech Startup
-          </p>
+          <p className="text-white mt-8">David Smith - CEO of a Tech Startup</p>
         </div>
       </div>
     </div>

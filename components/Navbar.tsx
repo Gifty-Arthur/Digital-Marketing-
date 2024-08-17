@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
 
   return (
     <div>
-      <nav className="">
+      <nav className="relative z-20  top-0">
         {/* desktop */}
         <div className="bg-[#2D2D2D] w-full shadow-2xl h-22 border-b ">
           <div className="container ">
