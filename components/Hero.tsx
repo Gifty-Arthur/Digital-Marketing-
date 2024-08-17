@@ -426,6 +426,124 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      {/* pricing plan */}
+
+      <div className="bg-primary">
+        <div className="container md:py-20 py-10">
+          <div className="flex flex-col items-center justify-center py-20">
+            <h1 className="text-white font-semibold text-4xl text-center">
+              Pricing Plans
+            </h1>
+            <p className="text-white text-md">Best Solution for Our Clients</p>
+          </div>
+
+          <div className="md:flex items-center justify-between">
+            <div className="bg-[#2F1C48] w-full md:w-[309px] h-[350px] rounded-lg">
+              <div className="px-10 py-10">
+                <div className="text-center">
+                  <p className="text-white text-2xl font-semibold ">
+                    Starter Plan
+                  </p>
+                  <p className="text-2xl font-semibold text-primary mt-4">
+                    $500
+                  </p>
+                </div>
+
+                <li className="text-white text-sm mt-4 ">
+                  Responsive website design and
+                </li>
+
+                <li className="text-white text-sm">Basic SEO</li>
+
+                <li className="text-white text-sm">Social media management</li>
+                <div className="flex items-center justify-center">
+                  <Link href="/">
+                    <button className="bg-primary w-[159px] h-[64px]  text-white rounded-full transition-all ease-in-out duration-300 hover:bg-gray-600  mt-6">
+                      Book Now
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            {/* 2nd */}
+            <div className="bg-[#2F1C48] w-full md:w-[309px] h-[350px] rounded-lg md:mt-0 mt-4">
+              <div className="px-10 py-10">
+                <div className="text-center">
+                  <p className="text-white text-2xl font-semibold ">
+                    Business Plan
+                  </p>
+                  <p className="text-2xl font-semibold text-primary mt-4">
+                    $1000
+                  </p>
+                </div>
+
+                <li className="text-white text-sm mt-4 ">
+                  Responsive website design and
+                </li>
+
+                <li className="text-white text-sm">Advanced SEO</li>
+
+                <li className="text-white text-sm">Social media management</li>
+                <li className="text-white text-sm">PPC advertising campaign</li>
+                <div className="flex items-center justify-center">
+                  <Link href="/">
+                    <button className="bg-primary w-[159px] h-[64px]  text-white rounded-full transition-all ease-in-out duration-300 hover:bg-gray-600  mt-6">
+                      Book Now
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            {/* 3rd */}
+            <div className="bg-[#2F1C48] w-full md:w-[309px] h-[350px] rounded-lg md:mt-0 mt-4">
+              <div className="px-10 py-10">
+                <div className="text-center">
+                  <p className="text-white text-2xl font-semibold ">
+                    Business Plan
+                  </p>
+                  <p className="text-2xl font-semibold text-primary mt-4">
+                    $2000
+                  </p>
+                </div>
+
+                <li className="text-white text-sm mt-4 ">
+                  Advanced Business Plan
+                </li>
+
+                <li className="text-white text-sm">Regular content creation</li>
+
+                <li className="text-white text-sm">Performance analysis</li>
+                <li className="text-white text-sm">Monthly reporting</li>
+                <div className="flex items-center justify-center">
+                  <Link href="/">
+                    <button className="bg-primary w-[159px] h-[64px]  text-white rounded-full transition-all ease-in-out duration-300 hover:bg-gray-600  mt-6">
+                      Book Now
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* ceo */}
+      <div className="bg-[#2F1C48]">
+        <div className="container py-20">
+          <div className="md:flex items-center justify-between">
+            <h1 className="text-4xl font-bold text-white">
+              “Stand out online and make an impact”
+            </h1>
+            <Link href="/">
+              <button className="bg-primary w-[139px] h-[54px]  text-white rounded-lg transition-all ease-in-out duration-300 hover:bg-gray-600  mt-6">
+                Start Now
+              </button>
+            </Link>
+          </div>
+          <p className="text-white mt-8 text-md">
+            David Smith - CEO of a Tech Startup
+          </p>
+        </div>
+      </div>
     </div>
   );
 };

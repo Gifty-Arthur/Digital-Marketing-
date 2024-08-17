@@ -37,20 +37,20 @@ const Navbar: React.FC = () => {
                   <li className="hover:underline hover:decoration-primary hover:text-primary">
                     <Link href="/">Home</Link>
                   </li>
-                  <li className="hover:text-primary">
-                    <Link href="/about">About Us</Link>
+                  <li className="hover:text-primary ">
+                    <Link href="/about">About</Link>
                   </li>
                   <li className="hover:text-primary">
                     <Link href="/features">Features</Link>
                   </li>
                   <li className="hover:text-primary">
-                    <Link href="/work">Our Works</Link>
+                    <Link href="/work">Works</Link>
                   </li>
                 </ul>
               </div>
               <div className=" flex-row gap-6  hidden sm:flex">
                 <Link href="/">
-                  <h3 className="text-[#AC6CFF] mt-2 hover:text-gray-600 ">
+                  <h3 className="text-[#AC6CFF] mt-1 hover:text-gray-600 ">
                     Sign In
                   </h3>
                 </Link>
