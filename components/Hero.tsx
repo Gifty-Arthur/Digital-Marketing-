@@ -364,6 +364,34 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
+      {/* work with gifty tech */}
+      <div className="bg-[#2B2038]">
+        <div className="container py-20">
+          <h1 className="text-white font-semibold text-4xl text-center">
+            Work with Gifty Tech
+          </h1>
+          <div className="md:py-20 py-10 md:flex items-center justify-between">
+            <div className="md:w-[189px] w-full  h-[198px] flex flex-col items-center justify-center">
+              <Image src="/images/t1.png" alt="/" width={50} height={50} />
+              <p className="text-lg text-white font-bold mt-2">10,000+</p>
+              <p className="text-white text-sm ">Happy Customers</p>
+            </div>
+            {/* 2nd image */}
+            <div className="md:w-[189px] w-full  h-[198px] flex flex-col items-center justify-center">
+              <Image src="/images/t2.png" alt="/" width={50} height={50} />
+              <p className="text-lg text-white font-bold mt-2">20,000+</p>
+              <p className="text-white text-sm ">Success Processes</p>
+            </div>
+            {/* 3rd image */}
+            <div className="md:w-[189px] w-full  h-[198px] flex flex-col items-center justify-center">
+              <Image src="/images/t2.png" alt="/" width={50} height={50} />
+              <p className="text-lg text-white font-bold mt-2">10+ Years+</p>
+              <p className="text-white text-sm ">Experience</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
