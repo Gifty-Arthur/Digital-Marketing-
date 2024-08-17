@@ -184,7 +184,7 @@ const Hero = () => {
         </div>
       </div>
       {/* services */}
-      <div className="bg-[#2F1C48] h-[580px]">
+      <div className="bg-[#2F1C48] md:h-[580px]">
         <div className="container">
           <div className="text-center md:py-20 py-10">
             <h1 className="text-3xl  text-white roboto font-semibold">
@@ -280,10 +280,87 @@ const Hero = () => {
 
       {/* Why choose us */}
       <div className="bg-[#2D2D2D]">
-        <div className="container md:py-20 py-10">
+        <div className="container py-20 ">
           <div className="flex gap-4">
             <p className="text-white font-semibold text-4xl">Why Choose Us?</p>
-            <div className="bg-white w-[200px] h-1 mt-6"></div>
+            <div className="bg-white md:w-[200px] h-1 mt-6"></div>
+          </div>
+          {/* img */}
+          <div className="py-10 md:flex flex-row md:space-x-80">
+            <Image
+              src="/images/w1.png"
+              alt="why"
+              width={380}
+              height={500}
+              className=""
+            />
+            <div className="flex flex-col md:py-0 py-10">
+              <h1 className="text-white font-bold text-4xl">
+                Solutions Tailored <br />
+                Specifically to Your <br />
+                Business Needs
+              </h1>
+              <p className="mt-4 text-[#F8F9FF] text-md">
+                We provide customized solutions for your
+                <br /> business needs, ensuring relevance and <br />
+                success.
+              </p>
+              <Link href="/">
+                <button className="bg-primary md:w-[179px] md:h-[64px] w-[98px] h-[52px] text-white rounded-lg transition-all ease-in-out duration-300 hover:bg-gray-600 md:mt-20 mt-6">
+                  Learn More
+                </button>
+              </Link>
+            </div>
+          </div>
+          {/* 2nd img */}
+          <div className="py-4 md:py-20 md:flex flex-row md:space-x-36">
+            <div className="flex flex-col md:py-0 py-10">
+              <h1 className="text-white font-bold text-4xl">
+                Creative Excellence Elevates Every Project
+              </h1>
+              <p className="mt-4 text-[#F8F9FF] text-md">
+                Creative excellence drives our work. From
+                <br /> concept to execution, we aim for exceptional
+                <br /> results.
+              </p>
+              <Link href="/">
+                <button className="bg-primary md:mt-20 mt-6 md:w-[179px] md:h-[64px] w-[98px] h-[52px] text-white rounded-lg transition-all ease-in-out duration-300 hover:bg-gray-600 ">
+                  Learn More
+                </button>
+              </Link>
+            </div>
+            <Image
+              src="/images/w2.png"
+              alt="why"
+              width={480}
+              height={500}
+              className=""
+            />
+          </div>
+          {/* 3rd image */}
+          <div className="py-20 md:flex flex-row md:space-x-80">
+            <Image
+              src="/images/w3.png"
+              alt="why"
+              width={580}
+              height={500}
+              className=""
+            />
+            <div className="flex flex-col md:py-0 py-10">
+              <h1 className="text-white font-bold text-4xl">
+                Client Satisfaction is Our Main Focus
+              </h1>
+              <p className="mt-4 text-[#F8F9FF] text-md">
+                Our main goal is your satisfaction, and we <br />
+                work tirelessly to ensure that you are pleased <br />
+                with the results we achieve together.
+              </p>
+              <Link href="/">
+                <button className="bg-primary md:w-[179px] md:h-[64px] w-[98px] h-[52px] text-white rounded-lg transition-all ease-in-out duration-300 hover:bg-gray-600 md:mt-20 mt-6">
+                  Learn More
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
