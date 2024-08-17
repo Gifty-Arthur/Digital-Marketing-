@@ -366,7 +366,7 @@ const Hero = () => {
       </div>
 
       {/* work with gifty tech */}
-      <div className="bg-[#2B2038]">
+      <div className="bg-[#2B2038] md:h-[454px]">
         <div className="container py-20">
           <h1 className="text-white font-semibold text-4xl text-center">
             Work with Gifty Tech
@@ -385,9 +385,43 @@ const Hero = () => {
             </div>
             {/* 3rd image */}
             <div className="md:w-[189px] w-full  h-[198px] flex flex-col items-center justify-center">
-              <Image src="/images/t2.png" alt="/" width={50} height={50} />
+              <Image src="/images/t3.png" alt="/" width={50} height={50} />
               <p className="text-lg text-white font-bold mt-2">10+ Years+</p>
               <p className="text-white text-sm ">Experience</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* what to say about */}
+      <div className="bg-[#2C2E33]">
+        <div className="container md:py-20 py-10">
+          <div className="flex flex-col items-center justify-between">
+            <h1 className="text-white font-semibold text-4xl text-center">
+              Testimonies
+            </h1>
+            <div className="md:w-[857px] w-full h-[390px] bg-primary rounded-lg mt-20">
+              <div className="flex  flex-col items-center justify-center py-10">
+                <Image src="/images/h1.png" alt="/" width={50} height={50} />
+                <p className="text-white font-bold text-md mt-4">
+                  Sarah Johnson
+                </p>
+                <p className="text-white font-bold text-md mt-2">
+                  Owner of a Botique Clothing Store
+                </p>
+                <p className="text-white font-bold text-lg mt-2 text-center py-8 hidden sm:flex">
+                  “Gifty Tech delivers exceptional service! Highly responsive
+                  and <br />
+                  effective digital marketing strategies have boosted our
+                  website
+                  <br /> traffic and conversions”.
+                </p>
+                <p className="text-white font-bold text-lg mt-2 text-center py-8 flex sm:hidden">
+                  “Gifty Tech delivers exceptional service! Highly responsive
+                  and effective digital marketing strategies have boosted our
+                  website traffic and conversions”.
+                </p>
+              </div>
             </div>
           </div>
         </div>
